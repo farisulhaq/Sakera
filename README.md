@@ -7,13 +7,13 @@ Rencana Kegiatan Tahunan KPPN Pamekasan
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/farisulhaq/Sakera.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd sakera
+  cd Sakera
 ```
 
 Install dependencies
