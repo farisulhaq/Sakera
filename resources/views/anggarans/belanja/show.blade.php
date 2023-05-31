@@ -19,7 +19,7 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Ket</th>
+                    <th>Kegiatan</th>
                     <th>Anggaran</th>
                     <th>Tanggal</th>
                     <th>Action</th>
