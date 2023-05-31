@@ -31,7 +31,7 @@
                       <tr>
                         <td class="text-bold-500">{{ $loop->iteration }}</td>
                         <td class="text">{{ $anggaran->name }}</td>
-                        <td class="text">{{ $anggaran->biaya }}</td>
+                        <td class="text">@rupiah($anggaran->biaya)</td>
                         <td class="text-capitalize">{{ $anggaran->tanggal }}</td>
                         <td class="text-bold-500">
                           <a href="{{ route('anggarans.belanja.edit', $anggaran) }}" class="text-primary"

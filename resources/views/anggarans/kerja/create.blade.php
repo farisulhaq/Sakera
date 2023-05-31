@@ -12,9 +12,9 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="form-group has-icon-left">
-                      <label for="first-name-icon">Ket</label>
+                      <label for="first-name-icon">Kegiatan</label>
                       <div class="position-relative">
-                        <input name="name" type="text" class="form-control" placeholder="Ket" id="first-name-icon"
+                        <input name="name" type="text" class="form-control" placeholder="Kegiatan" id="first-name-icon"
                           value="{{ old('name') }}" />
                         <div class="form-control-icon">
                           <i class="bi bi-award-fill"></i>

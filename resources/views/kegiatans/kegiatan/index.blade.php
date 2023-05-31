@@ -34,7 +34,7 @@
                       <td class="text">{{ $kegiatan->name }}</td>
                       <td class="text">{{ $kegiatan->target }}</td>
                       <td class="text-capitalize">{{ $kegiatan->satuan->name }}</td>
-                      <td class="text">{{ number_format($kegiatan->pagu, 0, ',', '.') }}</td>
+                      <td class="text">@rupiah($kegiatan->pagu)</td>
                       <td class="text-bold-500">
                         <a href="{{ route('kegiatan.edit', $kegiatan) }}" class="text-primary" style="font-size: 1.5rem">
                           <i class="bi bi-pencil-square"></i>
@@ -57,7 +57,7 @@
                 <tfoot>
                   <tr>
                     <th colspan="5" class="text-center">Total</th>
-                    <th colspan="2">{{ 'Rp. ' . number_format($sumPagu, 0, ',', '.') }}</th>
+                    <th colspan="2"> @rupiah($sumPagu) </th>
                   </tr>
                 </tfoot>
               </table>

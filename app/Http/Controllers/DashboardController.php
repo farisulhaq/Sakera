@@ -23,6 +23,9 @@ class DashboardController extends Controller
         return view('dashboard', [
             'totalSeksi' => Role::whereNot('id', 1)->count(),
             'totalUser' => User::count(),
+            'users' => User::whereHas('roles', function ($query) {
+                $query->where('name', '!=', 'admin');
+            })->get(),
             'totalKegiatan' => $kegiatanQuery->count(),
             'totalAnggaran' => $kegiatanQuery->sum('pagu'),
             'title' => 'Dashboard'

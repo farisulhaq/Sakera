@@ -34,14 +34,14 @@
                       <td class="text-bold-500">{{ $loop->iteration }}</td>
                       <td class="text">{{ $kegiatan->kode }}</td>
                       <td class="text-capitalize">{{ $kegiatan->satuan->name }}</td>
-                      <td class="text">{{ $kegiatan->pagu }}</td>
+                      <td class="text">@rupiah($kegiatan->pagu)</td>
                       @foreach ($bulans as $bulan)
                         @php
                           $count = 0;
                         @endphp
                         @foreach ($kegiatan->anggarans as $anggaran)
                           @if ($bulan->id === $anggaran->bulan_id)
-                            <td class="text-center text-break">{{ $anggaran->biaya }}</td>
+                            <td class="text-center text-break">@rupiah($anggaran->biaya)</td>
                             @php
                               $count++;
                             @endphp
