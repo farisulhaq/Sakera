@@ -91,7 +91,7 @@
                   </div>
                   <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                     <h6 class="text-muted font-semibold">Total Anggaran Seksi {{ Str::ucfirst($user->name) }}</h6>
-                    <h6 class="font-extrabold mb-0">{{ 'Rp. ' . number_format($user->roles[0]->kegiatans->sum('pagu'), 0, ',', '.') }}</h6>
+                    <h6 class="font-extrabold mb-0">@rupiah($user->roles[0]->kegiatans->sum('pagu'))</h6>
                   </div>
                 </div>
               </div>
